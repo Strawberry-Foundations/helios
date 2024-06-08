@@ -5,7 +5,7 @@ from helios import server_dir
 from helios.core.config import config
 
 
-class Fields:
+class Helios:
     def __init__(self, flask_app: Flask):
         self.main_path = os.path.dirname(server_dir)
         self.app = flask_app
