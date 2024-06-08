@@ -1,5 +1,7 @@
 from helios.core.config import config
 
+from helios.routes.index import index
+
 from flask import Flask
 
 app = Flask(
@@ -10,3 +12,5 @@ app = Flask(
 )
 
 # app.config["SECRET_KEY"] = load_secret()
+
+app.add_url_rule("/", view_func=index)
